@@ -1,0 +1,18 @@
+.vscode/
+.pytest_cache/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+*.pyc
+*.swp
+*.swo
+*.ipynb
+.Trash-0/
+
+# Test binary, built with `go test -c`
+*.test
+.coverage
+linting/
+reports/
+config/
+bin/
