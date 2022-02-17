@@ -11,7 +11,8 @@ app = Flask(__name__)
 
 @app.route('/headers')
 def headers():
-    headers = flask.request.headers
+    headers = request.headers
+    app.logger.info("headlers: {}".format(str(headers)))
     return "Request headers:\n" + str(headers)
 
 

@@ -1,4 +1,4 @@
-SERVICE_IMAGE_TAG := service-devenv
+SERVICE_IMAGE_TAG := headers-handler-devenv
 
 build:
 	@echo "Build jupyter docker iamge..."
