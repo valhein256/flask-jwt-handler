@@ -38,5 +38,6 @@ FROM base AS develop
 
 WORKDIR /opt/app
 COPY ./service .
-EXPOSE 5031
-CMD exec gunicorn --log-config gunicorn_logging.conf main:app -w 2 --timeout 30 -b 0.0.0.0:5031 --limit-request-line 0 --limit-request-field_size 0
+EXPOSE 80
+CMD ["python", "/opt/app/main.py"]
+#CMD exec gunicorn --log-config gunicorn_logging.conf main:app -w 2 --timeout 30 -b 0.0.0.0:80 --limit-request-line 0 --limit-request-field_size 0
